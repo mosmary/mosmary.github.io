@@ -1,0 +1,586 @@
+@import "elements.less";
+
+
+@white_transparent: rgba(255, 255, 255, 0.7); /*фон .wrapper*/
+@light-blue: rgba(188, 249, 255, 1);
+@light-blue2: rgba(170, 224, 229, 1);
+@gray-blue: rgba(141, 187, 191, 1);
+@gray-dark-blue: rgba(47, 62, 64, 1);
+@white: rgba(255, 255, 255, 1); /*Панель навигации*/
+@orange: rgba(229, 113, 36, 1); /*Кнопка заказа*/
+@darkorange: rgba(127, 63, 20, 1); /*Кнопка заказа*/
+
+body {
+	background: url("../img/4.jpg"); /*Устанавливаем цвет своего фона подложки*/
+}
+
+p, li {
+	line-height: 30px;
+}
+p {
+	text-align: justify;
+}
+
+
+.bord { /*Верхняя панель навигации активная и при наведении*/
+	.border-radius(20px, 20px, 20px, 20px);
+	border: 2px  solid @white;
+	padding: 13px; /*во избежании движения при наведении*/
+}
+
+.gradient-light() {
+	.gradient(@light-blue, @light-blue, @gray-blue);
+}
+
+.base-font() {
+	font-weight: bold;
+	color: @white;
+}
+.button_link() {
+	a {
+		text-decoration: none;
+		display: block;
+		.base-font;
+		font-size: 12pt;
+		padding: 15px;
+
+		&:hover {
+			.bord;
+	
+		}
+	}
+}/*.button_link*/
+
+.button() {
+		.gradient(@gray-blue, @gray-blue, @light-blue2);
+		.base-font;
+		.bord;
+		font-size: 12pt;
+		border: 1px solid @gray-blue;
+		&:hover {
+			.gradient(@gray-blue, @gray-blue, @gray-dark-blue);
+		}
+		&:active {
+			background:@gray-blue;
+		}
+	}
+
+.company() {
+	border: 5px dotted @gray-blue;
+	padding: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-top: 10px;
+	h1 {
+		text-shadow:0px 0px 0 rgb(120,166,160),0px 1px 0 rgb(102,148,142), 0px 2px 0 rgb(84,130,124),0px 3px 2px rgba(0,0,0,0.2),0px 3px 1px rgba(0,0,0,0.5),0px 0px 2px rgba(0,0,0,.2);
+	 	font-size: 30pt;
+	 	padding-top: 20px;
+	 	padding-bottom: 20px;
+	 	color: @gray-blue;
+	 	font-weight: bold;
+	 	font-style: italic;
+	 	}
+	 	.list_our_company;
+   }
+
+
+.list_our_company() {
+    list-style-position: inside;   		
+    
+    li {
+    	background: url("../img/check3.png") no-repeat;
+    	padding-bottom: 20px;
+    	width: 400px;
+    		span {
+    			padding-left: 60px;
+    			display: block;
+    			font-size: 12pt;
+    		}
+    }
+}/*.list_our_company*/
+
+.list() { /*списки с капелькой*/
+	ul {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		li {
+		    background: url("../img/water.png") 0 7px no-repeat; 
+		   	padding-left: 40px;
+		}
+	}
+}
+
+.h2_style() {
+	h2 {
+		font-size: 28pt;
+		color: @gray-blue;
+		margin-bottom: 30px;
+		margin-top: 30px;
+		text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
+	}
+}
+.h3_style() {
+	h3 {
+		font-size: 20pt;
+		color: @gray-blue;
+		margin-bottom: 30px;
+		margin-top: 30px;
+		text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
+	}
+}
+.h4_style() {
+	h4 {
+		font-size: 15pt;
+		color: @gray-blue;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		/*text-shadow: 2px 4px 3px rgba(0,0,0,0.3);*/
+
+	}
+}
+
+.content_padding_margin() {
+	padding: 40px;
+	margin-bottom: 20px;
+}
+.big_text() {
+	font-size: 30pt;
+	text-align: center;
+	line-height: 50px;
+	color: @orange;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.mission { /*Миссия компании - внизу на каждой странице*/
+   		.company;
+		background: url("../img/drop2.png") no-repeat;
+    	background-position: 0% 100%;
+    	h1 {
+    		margin-left: 450px;
+    	}
+    	ul {
+    		margin-left: 430px;
+    	}
+   	}/*.mission*/
+
+.positioner {
+	max-width: 980px;
+	margin: 0 auto;
+	
+}
+
+
+/*====.header====*/
+.header {
+	.gradient-light;
+	height: 500px;
+	position: relative;	
+		.logo {
+			width: 150px;
+			float: left;
+			margin: 20px;
+		}
+		.nav {					
+			float: right;
+			margin-top: 50px;
+			.top-menu {
+				li {
+					display: inline-block;	
+					line-height: 18px;			
+				}
+				.active a {
+					.bord;
+					marin-right: -2px;						
+					}				
+				.button_link;
+			}/*.top-menu*/
+		}/*.nav*/
+
+	.img-header {
+	opacity: 0.3;
+	.border-radius(50px, 50px, 50px, 50px);
+	width: 980px;
+	}
+	.header-content {
+		color: @gray-dark-blue;
+		font-weight: bold;
+		position: absolute;
+		width: 400px;
+		bottom: 20px;
+		left: 500px;
+		font-size: 25pt;
+		z-index: 10;
+		.delivery {
+			color: @darkorange;
+			display: block;
+			width: 350px;
+			text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2), 1px 1px 1px rgba(0, 0, 0, 0.6);
+		}/*.delivery*/
+
+		.callback {
+			display: block;
+			text-decoration: none;
+			.gradient(@orange, @orange, @darkorange);
+			.base-font;
+			font-size: 20pt;
+			width: 240px;
+			padding: 20px;
+			.border-radius(40px, 40px, 40px, 40px);
+			border: 2px solid @darkorange;
+			margin-top:20px;
+			margin-bottom:20px;
+
+			-moz-transform: rotate(-5deg);
+			-webkit-transform: rotate(-5deg);
+			-o-transform: rotate(-5deg);
+			-ms-transform: rotate(-5deg);
+			transform: rotate(-5deg);
+
+			&:hover {
+				.gradient(@darkorange, @darkorange, @orange);
+			}
+			&:active {
+				background: @darkorange;
+			}
+		}/*.callback*/
+
+		.phons {
+			color: @orange;
+			font-size: 14pt;			
+		}/*.phons*/
+	}/*.header-content*/
+
+}/*.header*/
+/*====.header====*/
+
+
+/*==================================index================================*/
+
+/*====.wrapper====*/
+.wrapper {
+	max-width: 980px;
+	margin: 0 auto;
+	background: @white_transparent;
+    border: 1px solid rgba(47, 62, 64, 0.2);
+    border-top: none;
+	box-shadow: -1px 8px 19px #333333;
+	-webkit-box-shadow: -1px 8px 19px #333333;
+	-moz-box-shadow: -1px 8px 19px #333333;
+	.content_padding_margin;
+	
+	.our_company {
+	 	.company;
+	 	ul {
+	 		background: url("../img/drop1.png") no-repeat;
+    		background-position: 100% 100%;
+	 	}	 	
+		.img1 {
+			float:right;
+		}
+   }/*.our_company*/
+   .content_index {
+		.list;
+		.h2_style;
+		.img-index1 {
+			width: 400px;
+			float: right;
+		}
+
+   	}/*.content_index*/
+   
+
+}/*.wrapper*/
+/*====.wrapper====*/
+
+/*==================================about_water.html================================*/
+.wrapper {
+	.about_water-content {
+		.h2_style;
+		.h3_style;
+		.h4_style;
+		.list;
+		
+		.about_water_img_right {
+			float: right;
+			margin: 10px 0 10px 10px;
+		}
+		.about_water_img_left {
+			float: left;
+			margin: 10px 10px 10px 0;
+		}
+	}/*.about_water-content*/
+}/*.wrapper*/
+/*==================================about_water.html================================*/
+
+/*==================================goods.html================================*/
+.wrapper {
+	.goods-content {
+		.h2_style;
+		.h3_style;
+		.list;
+		.good_img {
+			width: 100px;
+		}
+		table {
+			margin-bottom: 40px;
+			border: 5px double  @gray-blue;
+			background: @white;
+			tr {
+				border: 2px dotted @gray-blue;			
+			}
+		
+			td {
+				border: 2px dotted @gray-blue;
+				width: 50%;
+				vertical-align: top;
+				padding: 20px;
+				&:hover {
+					.bw-gradient(@light-blue, 230, 255);
+					border: 2px solid @gray-blue;
+				}
+				p {
+					padding-top: 20px;
+				}
+				span {
+					color: @orange;
+					font-weight: bold;
+				}
+			}
+			
+		} /*table*/				
+	}/*.goods-content*/
+}/*.wrapper*/
+/*==================================goods.html================================*/
+
+/*==================================delivery.html================================*/
+.wrapper {
+	.delivery-content {
+		.h2_style();
+		.h3_style();
+		.h4_style();
+		.middle-text {
+			font-size: 15pt;
+		}
+		.big_text {
+			font-size: 17pt;
+		}
+		.delivery_orders {
+			display: inline-block;
+			margin-right: 150px;		
+			font-size: 15pt;
+			line-height: 40px;
+			color: @orange;
+		}
+		.delivery_orders_time {
+			text-decoration: underline;
+			font-size: 15pt;
+			line-height: 40px;
+		}
+		.list;	
+	}/*.delivery-content*/
+}
+
+/*==================================delivery.html================================*/
+
+/*==================================news.html================================*/
+.wrapper {
+	.news-content{
+		.h2_style;
+		.date {
+			color: @orange;
+		}
+		a {
+			text-decoration: none;
+			color: @gray-dark-blue;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		.new {
+			float: right;
+			width: 680px;
+			a {
+				color: @orange;
+			}
+		}
+		img {
+			width: 200px;
+			outline: 2px solid @gray-blue;
+			margin-bottom: 40px;
+		}
+	}/*.news-content*/
+	.news1-content{
+		.h2_style;
+		em {
+			font-style: italic;
+			font-weight: bold;
+		}
+		img {
+			width: 600px;
+			float: right;
+			margin-left: 30px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		a {
+			text-decoration: none;
+			color: @orange;
+			line-height: 40px;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	
+		p {
+			padding-top: 20px;
+		}
+		
+		img {
+			/*width: 200px;*/
+			outline: 2px solid @gray-blue;
+			/*margin-bottom: 40px;*/
+		}
+	}/*.news1-content*/
+}
+
+/*==================================news.html================================*/
+
+/*==================================contacts.html================================*/
+.wrapper {
+	.contacts-content{
+		.h2_style;
+		.h3_style;
+		.contacts-phons{
+			color: @orange;
+			font-size: 15pt;
+			line-height: 40px;
+			margin-bottom: 60px;
+
+		}/*.contacts-phons*/
+		.middle-text {
+			font-size: 15pt;
+			margin-bottom: 30px;
+		}
+		.phone_img {
+			float: left;
+			width: 150px;
+			
+			margin-right: 50px;
+		}
+	}/*.contacts-content*/
+}/*.wrapper-content*/
+/*==================================contacts.html================================*/
+
+/*====.footer====*/
+.address {
+	font-size: 10pt;
+	width: 250px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*====.footer====*/
+
+/*====Форма обратной связи====*/
+
+/*само модальное окошко*/
+#modal_order {	
+	width: 450px; 
+    height: 550px;
+    .border-radius(5px, 5px, 5px, 5px);
+    background: @white;
+    position: fixed;   
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -150px;
+    display: none;
+    opacity: 0;
+    z-index: 100;
+    font-size: 12pt;
+
+	.top_modal_order {/*верхняя часть окошка*/
+		.border-radius(5px, 0px, 0px, 5px);
+		.gradient-light;
+		height: 65px;	
+		.base-font;
+		font-size: 16pt;
+		position: relative;
+		padding-top: 20px;
+		padding-left: 20px;
+	}/*верхняя часть окошка*/	
+	
+	#modal_close {/*кнопка закрытия*/
+	    .button_link;
+	    position: absolute;
+	    top: 10px;
+	    right: 10px;      
+	}/*кнопка закрытия*/
+
+	table {
+		margin: 20px auto;
+
+		.left {
+			text-align: right;
+			padding-right: 10px;
+			height: 40px;
+			vertical-align: top;
+			
+		}
+		input {
+			width: 200px;
+			outline: 1px solid @light-blue2;
+			font-size: 12pt;
+			&:focus {
+				outline: 1px solid @gray-blue;
+			}
+		}
+		textarea {
+			outline: 1px solid @light-blue2;
+			max-width: 200px;
+			max-height: 50px;
+			min-width: 200px;
+			min-height: 50px;
+			font-size: 12pt;
+			&:focus {
+				outline: 1px solid @gray-blue;
+			}
+		}
+	}/*table*/
+	input[type="submit"] {		
+		margin-top: 20px;
+		margin-left: 35%;
+		.button
+	}
+
+
+	.red {
+		color: red;
+		}
+	.impotant {
+		margin-left: 15px;
+	}
+}
+ /*само модальное окошко*/
+ 
+/*подложка*/
+#overlay {
+    z-index: 99;
+    position:fixed;
+    background-color:#000;
+    opacity:0.5;
+    -moz-opacity:0.5;
+    filter:alpha(opacity=50);
+    width:100%; 
+    height:100%;
+    top:0;
+    left:0;
+    cursor:pointer;
+    display:none;
+}
+/*подложка*/
+
+
+/*====Форма обратной связи====*/

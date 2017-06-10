@@ -1,0 +1,32 @@
+﻿* {
+	box-sizing: border-box;
+}
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden; /*Исключение появления горизонтальной полосы прокрутки*/
+    position: relative;
+}
+
+
+.footer {
+    height: 90px; /*Указать высоту своего футера*/
+    margin-top: -90px; /*Указать высоту своего футера*/
+    position: relative;
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.empty {
+    height: 90px; /*Высота как у футера, для исключения заползания футера на контент*/
+}

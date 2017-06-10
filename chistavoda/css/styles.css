@@ -1,0 +1,917 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*фон .wrapper*/
+/*Панель навигации*/
+/*Кнопка заказа*/
+/*Кнопка заказа*/
+/* line 13, styles.less */
+body {
+  background: url("../img/4.jpg");
+  /*Устанавливаем цвет своего фона подложки*/
+}
+/* line 17, styles.less */
+p,
+li {
+  line-height: 30px;
+}
+/* line 20, styles.less */
+p {
+  text-align: justify;
+}
+/* line 25, styles.less */
+.bord {
+  /*Верхняя панель навигации активная и при наведении*/
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 2px solid #ffffff;
+  padding: 13px;
+  /*во избежании движения при наведении*/
+}
+/*.button_link*/
+/*.list_our_company*/
+/* line 156, styles.less */
+.mission {
+  /*Миссия компании - внизу на каждой странице*/
+  border: 5px dotted #8dbbbf;
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  list-style-position: inside;
+  background: url("../img/drop2.png") no-repeat;
+  background-position: 0% 100%;
+}
+/* line 74, styles.less */
+.mission h1 {
+  text-shadow: 0px 0px 0 #78a6a0, 0px 1px 0 #66948e, 0px 2px 0 #54827c, 0px 3px 2px rgba(0, 0, 0, 0.2), 0px 3px 1px rgba(0, 0, 0, 0.5), 0px 0px 2px rgba(0, 0, 0, 0.2);
+  font-size: 30pt;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #8dbbbf;
+  font-weight: bold;
+  font-style: italic;
+}
+/* line 90, styles.less */
+.mission li {
+  background: url("../img/check3.png") no-repeat;
+  padding-bottom: 20px;
+  width: 400px;
+}
+/* line 94, styles.less */
+.mission li span {
+  padding-left: 60px;
+  display: block;
+  font-size: 12pt;
+}
+/* line 160, styles.less */
+.mission h1 {
+  margin-left: 450px;
+}
+/* line 163, styles.less */
+.mission ul {
+  margin-left: 430px;
+}
+/*.mission*/
+/* line 168, styles.less */
+.positioner {
+  max-width: 980px;
+  margin: 0 auto;
+}
+/*====.header====*/
+/* line 176, styles.less */
+.header {
+  background: #bcf9ff;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #bcf9ff), color-stop(1, #8dbbbf));
+  background: -ms-linear-gradient(bottom, #bcf9ff, #8dbbbf);
+  background: -moz-linear-gradient(center bottom, #bcf9ff 0%, #8dbbbf 100%);
+  background: -o-linear-gradient(#8dbbbf, #bcf9ff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8dbbbf', endColorstr='#bcf9ff', GradientType=0);
+  height: 500px;
+  position: relative;
+  /*.nav*/
+  /*.header-content*/
+}
+/* line 180, styles.less */
+.header .logo {
+  width: 150px;
+  float: left;
+  margin: 20px;
+}
+/* line 185, styles.less */
+.header .nav {
+  float: right;
+  margin-top: 50px;
+  /*.top-menu*/
+}
+/* line 189, styles.less */
+.header .nav .top-menu li {
+  display: inline-block;
+  line-height: 18px;
+}
+/* line 193, styles.less */
+.header .nav .top-menu .active a {
+  /*Верхняя панель навигации активная и при наведении*/
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 2px solid #ffffff;
+  padding: 13px;
+  /*во избежании движения при наведении*/
+  marin-right: -2px;
+}
+/* line 40, styles.less */
+.header .nav .top-menu a {
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 12pt;
+  padding: 15px;
+}
+/* line 47, styles.less */
+.header .nav .top-menu a:hover {
+  /*Верхняя панель навигации активная и при наведении*/
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 2px solid #ffffff;
+  padding: 13px;
+  /*во избежании движения при наведении*/
+}
+/* line 201, styles.less */
+.header .img-header {
+  opacity: 0.3;
+  -webkit-border-top-right-radius: 50px;
+  -webkit-border-bottom-right-radius: 50px;
+  -webkit-border-bottom-left-radius: 50px;
+  -webkit-border-top-left-radius: 50px;
+  -moz-border-radius-topright: 50px;
+  -moz-border-radius-bottomright: 50px;
+  -moz-border-radius-bottomleft: 50px;
+  -moz-border-radius-topleft: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 980px;
+}
+/* line 206, styles.less */
+.header .header-content {
+  color: #2f3e40;
+  font-weight: bold;
+  position: absolute;
+  width: 400px;
+  bottom: 20px;
+  left: 500px;
+  font-size: 25pt;
+  z-index: 10;
+  /*.delivery*/
+  /*.callback*/
+  /*.phons*/
+}
+/* line 215, styles.less */
+.header .header-content .delivery {
+  color: #7f3f14;
+  display: block;
+  width: 350px;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2), 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+/* line 222, styles.less */
+.header .header-content .callback {
+  display: block;
+  text-decoration: none;
+  background: #e57124;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e57124), color-stop(1, #7f3f14));
+  background: -ms-linear-gradient(bottom, #e57124, #7f3f14);
+  background: -moz-linear-gradient(center bottom, #e57124 0%, #7f3f14 100%);
+  background: -o-linear-gradient(#7f3f14, #e57124);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7f3f14', endColorstr='#e57124', GradientType=0);
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 20pt;
+  width: 240px;
+  padding: 20px;
+  -webkit-border-top-right-radius: 40px;
+  -webkit-border-bottom-right-radius: 40px;
+  -webkit-border-bottom-left-radius: 40px;
+  -webkit-border-top-left-radius: 40px;
+  -moz-border-radius-topright: 40px;
+  -moz-border-radius-bottomright: 40px;
+  -moz-border-radius-bottomleft: 40px;
+  -moz-border-radius-topleft: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 2px solid #7f3f14;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -moz-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+/* line 241, styles.less */
+.header .header-content .callback:hover {
+  background: #7f3f14;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #7f3f14), color-stop(1, #e57124));
+  background: -ms-linear-gradient(bottom, #7f3f14, #e57124);
+  background: -moz-linear-gradient(center bottom, #7f3f14 0%, #e57124 100%);
+  background: -o-linear-gradient(#e57124, #7f3f14);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e57124', endColorstr='#7f3f14', GradientType=0);
+}
+/* line 244, styles.less */
+.header .header-content .callback:active {
+  background: #7f3f14;
+}
+/* line 249, styles.less */
+.header .header-content .phons {
+  color: #e57124;
+  font-size: 14pt;
+}
+/*.header*/
+/*====.header====*/
+/*==================================index================================*/
+/*====.wrapper====*/
+/* line 262, styles.less */
+.wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(47, 62, 64, 0.2);
+  border-top: none;
+  box-shadow: -1px 8px 19px #333333;
+  -webkit-box-shadow: -1px 8px 19px #333333;
+  -moz-box-shadow: -1px 8px 19px #333333;
+  padding: 40px;
+  margin-bottom: 20px;
+  /*.our_company*/
+  /*.content_index*/
+}
+/* line 273, styles.less */
+.wrapper .our_company {
+  border: 5px dotted #8dbbbf;
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  list-style-position: inside;
+}
+/* line 74, styles.less */
+.wrapper .our_company h1 {
+  text-shadow: 0px 0px 0 #78a6a0, 0px 1px 0 #66948e, 0px 2px 0 #54827c, 0px 3px 2px rgba(0, 0, 0, 0.2), 0px 3px 1px rgba(0, 0, 0, 0.5), 0px 0px 2px rgba(0, 0, 0, 0.2);
+  font-size: 30pt;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #8dbbbf;
+  font-weight: bold;
+  font-style: italic;
+}
+/* line 90, styles.less */
+.wrapper .our_company li {
+  background: url("../img/check3.png") no-repeat;
+  padding-bottom: 20px;
+  width: 400px;
+}
+/* line 94, styles.less */
+.wrapper .our_company li span {
+  padding-left: 60px;
+  display: block;
+  font-size: 12pt;
+}
+/* line 275, styles.less */
+.wrapper .our_company ul {
+  background: url("../img/drop1.png") no-repeat;
+  background-position: 100% 100%;
+}
+/* line 279, styles.less */
+.wrapper .our_company .img1 {
+  float: right;
+}
+/* line 283, styles.less */
+.wrapper .content_index {
+  /*списки с капелькой*/
+}
+/* line 103, styles.less */
+.wrapper .content_index ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 106, styles.less */
+.wrapper .content_index ul li {
+  background: url("../img/water.png") 0 7px no-repeat;
+  padding-left: 40px;
+}
+/* line 114, styles.less */
+.wrapper .content_index h2 {
+  font-size: 28pt;
+  color: #8dbbbf;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 286, styles.less */
+.wrapper .content_index .img-index1 {
+  width: 400px;
+  float: right;
+}
+/*.wrapper*/
+/*====.wrapper====*/
+/*==================================about_water.html================================*/
+/* line 298, styles.less */
+.wrapper {
+  /*.about_water-content*/
+}
+/* line 299, styles.less */
+.wrapper .about_water-content {
+  /*списки с капелькой*/
+}
+/* line 114, styles.less */
+.wrapper .about_water-content h2 {
+  font-size: 28pt;
+  color: #8dbbbf;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 124, styles.less */
+.wrapper .about_water-content h3 {
+  font-size: 20pt;
+  color: #8dbbbf;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 134, styles.less */
+.wrapper .about_water-content h4 {
+  font-size: 15pt;
+  color: #8dbbbf;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  /*text-shadow: 2px 4px 3px rgba(0,0,0,0.3);*/
+}
+/* line 103, styles.less */
+.wrapper .about_water-content ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 106, styles.less */
+.wrapper .about_water-content ul li {
+  background: url("../img/water.png") 0 7px no-repeat;
+  padding-left: 40px;
+}
+/* line 305, styles.less */
+.wrapper .about_water-content .about_water_img_right {
+  float: right;
+  margin: 10px 0 10px 10px;
+}
+/* line 309, styles.less */
+.wrapper .about_water-content .about_water_img_left {
+  float: left;
+  margin: 10px 10px 10px 0;
+}
+/*.wrapper*/
+/*==================================about_water.html================================*/
+/*==================================goods.html================================*/
+/* line 318, styles.less */
+.wrapper {
+  /*.goods-content*/
+}
+/* line 319, styles.less */
+.wrapper .goods-content {
+  /*списки с капелькой*/
+  /*table*/
+}
+/* line 114, styles.less */
+.wrapper .goods-content h2 {
+  font-size: 28pt;
+  color: #8dbbbf;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 124, styles.less */
+.wrapper .goods-content h3 {
+  font-size: 20pt;
+  color: #8dbbbf;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 103, styles.less */
+.wrapper .goods-content ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 106, styles.less */
+.wrapper .goods-content ul li {
+  background: url("../img/water.png") 0 7px no-repeat;
+  padding-left: 40px;
+}
+/* line 323, styles.less */
+.wrapper .goods-content .good_img {
+  width: 100px;
+}
+/* line 326, styles.less */
+.wrapper .goods-content table {
+  margin-bottom: 40px;
+  border: 5px double #8dbbbf;
+  background: #ffffff;
+}
+/* line 330, styles.less */
+.wrapper .goods-content table tr {
+  border: 2px dotted #8dbbbf;
+}
+/* line 334, styles.less */
+.wrapper .goods-content table td {
+  border: 2px dotted #8dbbbf;
+  width: 50%;
+  vertical-align: top;
+  padding: 20px;
+}
+/* line 339, styles.less */
+.wrapper .goods-content table td:hover {
+  background: #bcf9ff;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e6e6e6), color-stop(1, #ffffff));
+  background: -ms-linear-gradient(bottom, #e6e6e6 0%, #ffffff 100%);
+  background: -moz-linear-gradient(center bottom, #e6e6e6 0%, #ffffff 100%);
+  background: -o-linear-gradient(#ffffff, #e6e6e6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border: 2px solid #8dbbbf;
+}
+/* line 343, styles.less */
+.wrapper .goods-content table td p {
+  padding-top: 20px;
+}
+/* line 346, styles.less */
+.wrapper .goods-content table td span {
+  color: #e57124;
+  font-weight: bold;
+}
+/*.wrapper*/
+/*==================================goods.html================================*/
+/*==================================delivery.html================================*/
+/* line 358, styles.less */
+.wrapper {
+  /*.delivery-content*/
+}
+/* line 359, styles.less */
+.wrapper .delivery-content {
+  /*списки с капелькой*/
+}
+/* line 114, styles.less */
+.wrapper .delivery-content h2 {
+  font-size: 28pt;
+  color: #8dbbbf;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 124, styles.less */
+.wrapper .delivery-content h3 {
+  font-size: 20pt;
+  color: #8dbbbf;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 134, styles.less */
+.wrapper .delivery-content h4 {
+  font-size: 15pt;
+  color: #8dbbbf;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  /*text-shadow: 2px 4px 3px rgba(0,0,0,0.3);*/
+}
+/* line 363, styles.less */
+.wrapper .delivery-content .middle-text {
+  font-size: 15pt;
+}
+/* line 366, styles.less */
+.wrapper .delivery-content .big_text {
+  font-size: 17pt;
+}
+/* line 369, styles.less */
+.wrapper .delivery-content .delivery_orders {
+  display: inline-block;
+  margin-right: 150px;
+  font-size: 15pt;
+  line-height: 40px;
+  color: #e57124;
+}
+/* line 376, styles.less */
+.wrapper .delivery-content .delivery_orders_time {
+  text-decoration: underline;
+  font-size: 15pt;
+  line-height: 40px;
+}
+/* line 103, styles.less */
+.wrapper .delivery-content ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 106, styles.less */
+.wrapper .delivery-content ul li {
+  background: url("../img/water.png") 0 7px no-repeat;
+  padding-left: 40px;
+}
+/*==================================delivery.html================================*/
+/*==================================news.html================================*/
+/* line 388, styles.less */
+.wrapper {
+  /*.news-content*/
+  /*.news1-content*/
+}
+/* line 114, styles.less */
+.wrapper .news-content h2 {
+  font-size: 28pt;
+  color: #8dbbbf;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 391, styles.less */
+.wrapper .news-content .date {
+  color: #e57124;
+}
+/* line 394, styles.less */
+.wrapper .news-content a {
+  text-decoration: none;
+  color: #2f3e40;
+}
+/* line 397, styles.less */
+.wrapper .news-content a:hover {
+  text-decoration: underline;
+}
+/* line 401, styles.less */
+.wrapper .news-content .new {
+  float: right;
+  width: 680px;
+}
+/* line 404, styles.less */
+.wrapper .news-content .new a {
+  color: #e57124;
+}
+/* line 408, styles.less */
+.wrapper .news-content img {
+  width: 200px;
+  outline: 2px solid #8dbbbf;
+  margin-bottom: 40px;
+}
+/* line 114, styles.less */
+.wrapper .news1-content h2 {
+  font-size: 28pt;
+  color: #8dbbbf;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 416, styles.less */
+.wrapper .news1-content em {
+  font-style: italic;
+  font-weight: bold;
+}
+/* line 420, styles.less */
+.wrapper .news1-content img {
+  width: 600px;
+  float: right;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 427, styles.less */
+.wrapper .news1-content a {
+  text-decoration: none;
+  color: #e57124;
+  line-height: 40px;
+}
+/* line 431, styles.less */
+.wrapper .news1-content a:hover {
+  text-decoration: underline;
+}
+/* line 436, styles.less */
+.wrapper .news1-content p {
+  padding-top: 20px;
+}
+/* line 440, styles.less */
+.wrapper .news1-content img {
+  /*width: 200px;*/
+  outline: 2px solid #8dbbbf;
+  /*margin-bottom: 40px;*/
+}
+/*==================================news.html================================*/
+/*==================================contacts.html================================*/
+/* line 451, styles.less */
+.wrapper {
+  /*.contacts-content*/
+}
+/* line 452, styles.less */
+.wrapper .contacts-content {
+  /*.contacts-phons*/
+}
+/* line 114, styles.less */
+.wrapper .contacts-content h2 {
+  font-size: 28pt;
+  color: #8dbbbf;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 124, styles.less */
+.wrapper .contacts-content h3 {
+  font-size: 20pt;
+  color: #8dbbbf;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 455, styles.less */
+.wrapper .contacts-content .contacts-phons {
+  color: #e57124;
+  font-size: 15pt;
+  line-height: 40px;
+  margin-bottom: 60px;
+}
+/* line 462, styles.less */
+.wrapper .contacts-content .middle-text {
+  font-size: 15pt;
+  margin-bottom: 30px;
+}
+/* line 466, styles.less */
+.wrapper .contacts-content .phone_img {
+  float: left;
+  width: 150px;
+  margin-right: 50px;
+}
+/*.wrapper-content*/
+/*==================================contacts.html================================*/
+/*====.footer====*/
+/* line 477, styles.less */
+.address {
+  font-size: 10pt;
+  width: 250px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*====.footer====*/
+/*====Форма обратной связи====*/
+/*само модальное окошко*/
+/* line 490, styles.less */
+#modal_order {
+  width: 450px;
+  height: 550px;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-topleft: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #ffffff;
+  position: fixed;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -150px;
+  display: none;
+  opacity: 0;
+  z-index: 100;
+  font-size: 12pt;
+  /*верхняя часть окошка*/
+  /*кнопка закрытия*/
+  /*table*/
+}
+/* line 504, styles.less */
+#modal_order .top_modal_order {
+  /*верхняя часть окошка*/
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -moz-border-radius-topleft: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 5px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #bcf9ff;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #bcf9ff), color-stop(1, #8dbbbf));
+  background: -ms-linear-gradient(bottom, #bcf9ff, #8dbbbf);
+  background: -moz-linear-gradient(center bottom, #bcf9ff 0%, #8dbbbf 100%);
+  background: -o-linear-gradient(#8dbbbf, #bcf9ff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8dbbbf', endColorstr='#bcf9ff', GradientType=0);
+  height: 65px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 16pt;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+/* line 515, styles.less */
+#modal_order #modal_close {
+  /*кнопка закрытия*/
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/* line 40, styles.less */
+#modal_order #modal_close a {
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 12pt;
+  padding: 15px;
+}
+/* line 47, styles.less */
+#modal_order #modal_close a:hover {
+  /*Верхняя панель навигации активная и при наведении*/
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 2px solid #ffffff;
+  padding: 13px;
+  /*во избежании движения при наведении*/
+}
+/* line 522, styles.less */
+#modal_order table {
+  margin: 20px auto;
+}
+/* line 525, styles.less */
+#modal_order table .left {
+  text-align: right;
+  padding-right: 10px;
+  height: 40px;
+  vertical-align: top;
+}
+/* line 532, styles.less */
+#modal_order table input {
+  width: 200px;
+  outline: 1px solid #aae0e5;
+  font-size: 12pt;
+}
+/* line 536, styles.less */
+#modal_order table input:focus {
+  outline: 1px solid #8dbbbf;
+}
+/* line 540, styles.less */
+#modal_order table textarea {
+  outline: 1px solid #aae0e5;
+  max-width: 200px;
+  max-height: 50px;
+  min-width: 200px;
+  min-height: 50px;
+  font-size: 12pt;
+}
+/* line 547, styles.less */
+#modal_order table textarea:focus {
+  outline: 1px solid #8dbbbf;
+}
+/* line 552, styles.less */
+#modal_order input[type="submit"] {
+  margin-top: 20px;
+  margin-left: 35%;
+  background: #8dbbbf;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #8dbbbf), color-stop(1, #aae0e5));
+  background: -ms-linear-gradient(bottom, #8dbbbf, #aae0e5);
+  background: -moz-linear-gradient(center bottom, #8dbbbf 0%, #aae0e5 100%);
+  background: -o-linear-gradient(#aae0e5, #8dbbbf);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aae0e5', endColorstr='#8dbbbf', GradientType=0);
+  font-weight: bold;
+  color: #ffffff;
+  /*Верхняя панель навигации активная и при наведении*/
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 2px solid #ffffff;
+  padding: 13px;
+  /*во избежании движения при наведении*/
+  font-size: 12pt;
+  border: 1px solid #8dbbbf;
+}
+/* line 60, styles.less */
+#modal_order input[type="submit"]:hover {
+  background: #8dbbbf;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #8dbbbf), color-stop(1, #2f3e40));
+  background: -ms-linear-gradient(bottom, #8dbbbf, #2f3e40);
+  background: -moz-linear-gradient(center bottom, #8dbbbf 0%, #2f3e40 100%);
+  background: -o-linear-gradient(#2f3e40, #8dbbbf);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f3e40', endColorstr='#8dbbbf', GradientType=0);
+}
+/* line 63, styles.less */
+#modal_order input[type="submit"]:active {
+  background: #8dbbbf;
+}
+/* line 559, styles.less */
+#modal_order .red {
+  color: red;
+}
+/* line 562, styles.less */
+#modal_order .impotant {
+  margin-left: 15px;
+}
+/*само модальное окошко*/
+/*подложка*/
+/* line 569, styles.less */
+#overlay {
+  z-index: 99;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  filter: alpha(opacity=50);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+/*подложка*/
+/*====Форма обратной связи====*/
