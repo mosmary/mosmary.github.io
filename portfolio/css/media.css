@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:300,400,400i");
+/*╨С╨░╨╖╨╛╨▓╤Л╨╣ ╤И╤А╨╕╤Д╤В */
+/*"╨в╨╛╨╜╨║╨╕╨╣" ╤И╤А╨╕╤Д╤В */
+/*╨Ъ╤Г╤А╤Б╨╕╨▓ */
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .top_wrapper .top_text h1 {
+    font-size: 55px;
+    line-height: 20px;
+  }
+  .top_wrapper .top_text p {
+    font-size: 20px;
+  }
+
+  .header-social {
+    border-left: transparent;
+  }
+  .header-social .soc {
+    margin-bottom: 5%;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .top_wrapper .top_text h1 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .top_wrapper .top_text p {
+    font-size: 15px;
+  }
+}

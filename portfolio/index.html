@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Портфолио</title>
+
+		
+		<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css">
+		<link href="libs/hamburgers/hamburgers.min.css" rel="stylesheet">
+		<link href="libs/mmenu/jquery.mmenu.all.css" rel="stylesheet">
+		<link href="libs/leastjs2.2.0/src/css/least.min.css" rel="stylesheet">
+		<link href="libs/eskju-jquery-scrollflow/eskju.jquery.scrollflow.css" rel="stylesheet">
+
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/media.css" rel="stylesheet">
+
+		<script src="https://use.fontawesome.com/ea4402b557.js"></script>
+
+		
+		<!--[if lt IE 9]>
+			<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+	</head>
+
+
+	<body>
+
+		<div id="my-page">
+			<div id="my-header">
+				<div class="loader">
+					<div class="loader_inner"></div> <!-- .loader_inner -->
+				</div> <!-- .loader -->
+				<header class="parallax-header">
+
+					<a href="#my-menu" class="hamburger hamburger--spring">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</a>
+
+					<nav id="my-menu">
+						
+						<ul>
+							<li><a href="#about">Обо мне</a></li>
+							<li><a href="#least">Мои работы</a></li>
+							<li><a href="#contacts">Контакты</a></li>
+						</ul>
+						<img src="img/web.png" class="img-menu img-responsive">
+					</nav>
+						<div class="top_wrapper">
+							<div class="top_descr">
+								<div class="top_centered">
+									<div class="top_text">
+										<h1>Москальцова Мария</h1>
+										<p>Web-дизайнер, Front-End разработчик</p>
+									</div> <!-- .top_text -->				
+								</div> <!-- .top_centered -->
+							</div> <!-- .top_descr -->
+						</div> <!-- .top_wrapper -->
+
+						<div class="header-social">
+							<nav class="soc">
+								<ul>
+									<li><a href="https://www.facebook.com/profile.php?id=100001020568771"  target="_blank"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="https://twitter.com/mosmary2" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/%D0%BC%D0%B0%D1%80%D0%B8%D1%8F-%D0%BC%D0%BE%D1%81%D0%BA%D0%B0%D0%BB%D1%8C%D1%86%D0%BE%D0%B2%D0%B0-0bb6a2144/" target="_blank"><i class="fa fa-linkedin"></i></i></a></li>
+								</ul>
+							</nav>
+
+						</div> <!-- .header-social -->
+				
+				</header>
+			</div> <!-- #my-header -->
+
+			<div id="my-content">
+
+				<section class="s-about light scrollflow -slide-top" id="about">
+					
+					<div class="container">
+						<h2 class="">Обо мне</h2>
+						<div class="row">
+
+							<div class="col-md-4 col-md-push-7">
+								<img src="img/photo.jpg" alt="Мое фото" class="img-responsive">
+							</div> <!-- .col-md-4 -->
+
+							<div class="col-md-7 col-md-pull-4">
+								<p>Добро пожаловать на мой сайт!</p>
+								<p>Я еще начинающий front-end разработчик. Однако, постоянно занимаюсь самообучением и активно развиваю свои навыки.</p>
+								<p>Владею такими технологиями: HTML5, CSS3, LESS, SASS. Немного JavaScript, jQuery, PHP, CMS WordPress.</p>
+								<p>Владею Photoshop на уровне отрисовки несложного макета сайта, а также могу верстать по готовым psd-макетам.</p>
+								<p>Хотя в моем портфолио еще немного работ, я развиваю свои навыки и стремлюсь к большему!</p>
+							</div>						
+							
+						</div> <!-- .row -->
+						
+					</div> <!-- .container -->
+				</section> <!-- .s-about -->
+
+				<!-- Least Gallery -->
+				<section class="s-portfolio dark scrollflow -slide-top" id="least">
+					<div class="container">
+
+						<h2>Мои работы</h2>
+						  
+							<!-- Least Gallery: Fullscreen Preview -->
+							<div class="least-preview"></div>
+								  
+							<!-- Least Gallery: Thumbnails -->
+							<ul class="least-gallery">
+								<!-- 1th thumbnail -->
+								<li>
+									<a href="img/gallery/1.jpg" data-subtitle="РА Логистик" data-caption="Сайт-визитка логистической компании РА Логистик, осуществляющей морские и сухопутные грузоперевозки - <a href='https://mosmary.github.io/logistic/' target='_blank'>Перейти на сайт</a>" >
+										<img src="img/gallery/thumbnails/1.jpg" alt="РА Логистик" />
+									</a>
+								</li>
+							
+								<!-- 2nd thumbnail -->
+								<li>
+									<a href="img/gallery/2.jpg" data-subtitle="Сайт-визитка стоматологии Denta-Vita" data-caption="Сайт-визитка стоматологии Denta-Vita. Сайт создан с помощью фреймворка Bootstrap, использовался препроцессор LESS - <a href='http://dentavita.zzz.com.ua' target='_blank'>Перейти на сайт</a>" >
+										<img src="img/gallery/thumbnails/2.jpg" alt="Стоматология Denta-Vita" />
+									</a>
+								</li>
+
+								<!-- 3rd thumbnail -->
+								<li>
+									<a href="img/gallery/3.jpg" data-subtitle="MDC - текстильные изделия" data-caption="Сайт компании MDC, занимающейся пошивом текстильных изделий. Для сайта создан шаблон для CMS WordPress с использованием фреймворка Bootstrap - <a href='http://mdc.zzz.com.ua' target='_blank'>Перейти на сайт</a>" >
+									<img src="img/gallery/thumbnails/3.jpg" alt="MDC - текстильные изделия" />
+								</a>
+							</li>
+
+							<!-- 4th thumbnail -->
+							<li>
+								<a href="img/gallery/4.jpg" data-subtitle="Чиста вода" data-caption="Сайт компании Чиста вода, осуществляющей доставку питьевой воды - <a href='https://mosmary.github.io/chistavoda/' target='_blank'>Перейти на сайт</a>" >
+								<img src="img/gallery/thumbnails/4.jpg" alt="Чиста вода" />
+							</a>
+						</li>
+
+					</ul>
+
+					</div> <!-- .container -->
+				</section> <!-- .s-portfolio -->
+				<!-- Least Gallery end -->
+
+				<section class="s-contacts light scrollflow -slide-top" id="contacts">
+
+					<div class="container">
+
+						<h2>Контакты</h2>
+						
+						<div class="row">
+							
+							<div class="col-md-4">
+								
+								<div class="phone">
+									<span><i class="fa fa-mobile" aria-hidden="true"></i> Телефон</span><br>
+									+38 (050) 532 64 81
+								</div>
+								
+								<div class="email">
+									<span><i class="fa fa-envelope-o" aria-hidden="true"></i> E-mail</span><br>
+									mariamoskaltsova@gmail.com
+								</div>
+
+							</div><!-- .col-md-4-->
+						
+
+						
+							<div class="col-md-8">
+								<div class="map-responsive">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28088.29569637677!2d30.697557633838045!3d51.51912239830526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d565f4eb75d537%3A0xc50705b9ed2329ea!2z0KHQu9Cw0LLRg9GC0LjRhywg0JrQuNC10LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LA!5e0!3m2!1sru!2sru!4v1497035650258" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div> <!-- .row -->
+
+					</div> <!-- .container -->
+
+				</section> <!-- .s-contacts -->
+
+			</div> <!-- #my-content -->
+
+			<div id="my-footer">
+				<footer class="dark">
+					<div class="container">
+						<div class="row">
+
+							<div class="col-md-6">
+								<div class="copy">
+									Все права защищены &copy; Москальцова Мария 2017
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<nav class="soc">
+									<ul>
+										<li><a href="https://www.facebook.com/profile.php?id=100001020568771"  target="_blank"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="https://twitter.com/mosmary2" target="_blank"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="https://www.linkedin.com/in/%D0%BC%D0%B0%D1%80%D0%B8%D1%8F-%D0%BC%D0%BE%D1%81%D0%BA%D0%B0%D0%BB%D1%8C%D1%86%D0%BE%D0%B2%D0%B0-0bb6a2144/" target="_blank"><i class="fa fa-linkedin"></i></i></a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div> <!-- #my-footer -->
+
+			<button id="top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+
+		</div> <!-- #my-page -->
+
+		
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="libs/parallax/parallax.min.js"></script>
+		<script src="libs/mmenu/jquery.mmenu.all.js"></script>
+		<script src="libs/leastjs2.2.0/src/js/libs/least/least.min.js"></script>
+		<script src="libs/eskju-jquery-scrollflow/eskju.jquery.scrollflow.min.js"></script>
+
+		<script src="js/common.js"></script>
+	</body>
+</html>
